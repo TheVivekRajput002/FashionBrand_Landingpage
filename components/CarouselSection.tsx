@@ -11,11 +11,14 @@ export default function CarouselSection() {
             Choose What Suits You<br /><em>For Every Occasion</em>
           </h2>
         </div>
-        <a href="#" className="btn-ghost">Browse All</a>
+        {/* Text-only link instead of ghost button — less visual competition */}
+        <a href="#" className="carousel-browse-link">
+          Browse All <span aria-hidden="true">→</span>
+        </a>
       </RevealWrapper>
 
       <RevealWrapper>
-        <div className="carousel-track-wrap mt-8" role="region" aria-label="Collections 3D Marquee" aria-live="off">
+        <div className="carousel-track-wrap" role="region" aria-label="Collections 3D Marquee" aria-live="off">
           <ThreeDMarquee />
         </div>
       </RevealWrapper>
