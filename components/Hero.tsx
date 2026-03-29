@@ -18,8 +18,10 @@ export default function Hero() {
           <a href="#analyze" className="btn-primary">Discover Your Style</a>
           <a href="#stylebot" className="btn-ghost">Meet StyleBot</a>
         </div>
+        <p className="hero-stat-bar">10k+ Styles&nbsp;·&nbsp;95% Match Rate&nbsp;·&nbsp;24/7 AI</p>
       </div>
 
+      {/* Desktop hero right */}
       <div className="hero-right" aria-hidden="true">
         <div className="hero-card-stack">
           <div className="hero-card hero-card-accent overflow-hidden relative border-0">
@@ -31,7 +33,7 @@ export default function Hero() {
             </div>
           </div>
           <div className="hero-card hero-card-accent2 overflow-hidden relative border-0">
-             <Image src="/images/fashion/6.webp" alt="Style reference" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-60" />
+            <Image src="/images/fashion/6.webp" alt="Style reference" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-60" />
           </div>
           <div className="hero-card hero-card-main overflow-hidden relative border-0">
             <Image src="/images/fashion/7.webp" alt="Cerope AI Styling" fill sizes="(max-width: 768px) 100vw, 33vw" priority className="object-cover opacity-90" />
@@ -42,6 +44,19 @@ export default function Hero() {
             </div>
           </div>
         </div>
+      </div>
+
+      {/* Mobile hero image — shown only on mobile in place of hidden hero-right */}
+      <div className="hero-mobile-img" aria-hidden="true">
+        <Image
+          src="/images/fashion/7.webp"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
+        <div className="hero-mobile-overlay" />
       </div>
     </section>
   )

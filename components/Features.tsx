@@ -22,18 +22,18 @@ export default function Features() {
         </p>
       </RevealWrapper>
 
-      <RevealWrapper>
-        <div className="features-grid">
-          {features.map((f) => (
-            <div key={f.title} className="feature-card">
+      <div className="features-grid">
+        {features.map((f, i) => (
+          <RevealWrapper key={f.title} delay={`${i * 100}ms`}>
+            <div className="feature-card">
               <div className={`feat-icon ${f.color}`} aria-hidden="true">{f.icon}</div>
               <p className="feat-title">{f.title}</p>
               <p className="feat-desc">{f.desc}</p>
-              <a href="#" className="feat-link">Explore <span aria-hidden="true">→</span></a>
+              <a href="#" className="feat-link">Explore <span className="arrow" aria-hidden="true">→</span></a>
             </div>
-          ))}
-        </div>
-      </RevealWrapper>
+          </RevealWrapper>
+        ))}
+      </div>
     </section>
   )
 }

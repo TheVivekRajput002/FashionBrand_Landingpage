@@ -12,7 +12,7 @@ export default function MarqueeSection() {
       <div className="marquee-track">
         {doubled.map((item, i) => (
           <span key={i} className="marquee-item">
-            <span className="marquee-dot" />
+            <span className="marquee-dot" aria-hidden="true">✦</span>
             {item}
           </span>
         ))}
