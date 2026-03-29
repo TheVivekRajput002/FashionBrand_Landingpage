@@ -1,0 +1,33 @@
+﻿app/layout.tsx(8,38): error TS7031: Binding element 'children' implicitly has an 'any' type.
+components/AllFeatures.tsx(14,8): error TS2741: Property 'style' is missing in type '{ children: Element[]; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/AllFeatures.tsx(21,8): error TS2741: Property 'style' is missing in type '{ children: Element; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/Analyze.tsx(7,10): error TS2741: Property 'style' is missing in type '{ children: Element[]; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/Analyze.tsx(19,10): error TS2741: Property 'style' is missing in type '{ children: Element; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/BottomNav.tsx(22,48): error TS2345: Argument of type 'HTMLElement | null' is not assignable to parameter of type 'Element'.
+  Type 'null' is not assignable to type 'Element'.
+components/BottomNav.tsx(26,21): error TS7006: Parameter 'id' implicitly has an 'any' type.
+components/CarouselSection.tsx(14,25): error TS7031: Binding element 'img' implicitly has an 'any' type.
+components/CarouselSection.tsx(14,30): error TS7031: Binding element 'alt' implicitly has an 'any' type.
+components/CarouselSection.tsx(18,17): error TS2304: Cannot find name 'hidden'.
+components/CarouselSection.tsx(19,13): error TS2304: Cannot find name 'hidden'.
+components/CarouselSection.tsx(20,19): error TS2304: Cannot find name 'hidden'.
+components/CarouselSection.tsx(20,52): error TS2304: Cannot find name 'tag'.
+components/CarouselSection.tsx(21,20): error TS2304: Cannot find name 'hidden'.
+components/CarouselSection.tsx(31,8): error TS2741: Property 'style' is missing in type '{ children: Element[]; className: string; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/CarouselSection.tsx(41,8): error TS2741: Property 'style' is missing in type '{ children: Element; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/CarouselSection.tsx(44,58): error TS2339: Property 'name' does not exist on type '{ img: string; alt: string; }'.
+components/CarouselSection.tsx(46,61): error TS2339: Property 'name' does not exist on type '{ img: string; alt: string; }'.
+components/CarouselSection.tsx(46,83): error TS2322: Type '{ hidden: true; img: string; alt: string; key: string; }' is not assignable to type 'IntrinsicAttributes & { img: any; alt: any; }'.
+  Property 'hidden' does not exist on type 'IntrinsicAttributes & { img: any; alt: any; }'.
+components/Experts.tsx(23,8): error TS2741: Property 'style' is missing in type '{ children: Element; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/Features.tsx(15,8): error TS2741: Property 'style' is missing in type '{ children: Element[]; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/Features.tsx(25,8): error TS2741: Property 'style' is missing in type '{ children: Element; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/Planner.tsx(19,10): error TS2741: Property 'style' is missing in type '{ children: Element[]; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/Planner.tsx(30,10): error TS2741: Property 'style' is missing in type '{ children: Element; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/RevealWrapper.tsx(4,41): error TS7031: Binding element 'children' implicitly has an 'any' type.
+components/RevealWrapper.tsx(4,67): error TS7031: Binding element 'style' implicitly has an 'any' type.
+components/RevealWrapper.tsx(14,16): error TS2339: Property 'classList' does not exist on type 'never'.
+components/StyleBot.tsx(31,50): error TS2339: Property 'scrollTop' does not exist on type 'never'.
+components/StyleBot.tsx(31,82): error TS2339: Property 'scrollHeight' does not exist on type 'never'.
+components/Wardrobe.tsx(16,10): error TS2741: Property 'style' is missing in type '{ children: Element; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
+components/Wardrobe.tsx(30,10): error TS2741: Property 'style' is missing in type '{ children: Element[]; }' but required in type '{ children: any; className?: string | undefined; style: any; }'.
