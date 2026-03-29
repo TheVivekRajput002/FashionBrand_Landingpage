@@ -15,25 +15,25 @@ const SERVICES = [
     id: "01",
     title: "Outdoor Fashion",
     description: "Active & Nature Wear specialists to keep you stylish in the elements.",
-    image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=1200",
+    image: "/images/fashion/1.webp",
   },
   {
     id: "02",
     title: "Accessories",
     description: "Jewellery & More to perfectly complement your every outfit.",
-    image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=1200",
+    image: "/images/fashion/2.webp",
   },
   {
     id: "03",
     title: "Find Your Style",
     description: "Personal Stylists dedicated to defining your unique visual identity.",
-    image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200",
+    image: "/images/fashion/3.webp",
   },
   {
     id: "04",
     title: "Seasonal Guides",
     description: "Transition Specialists for seamless wardrobe updates year-round.",
-    image: "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200",
+    image: "/images/fashion/4.webp",
   },
 ];
 

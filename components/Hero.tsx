@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function Hero() {
   return (
     <section className="hero" aria-label="Hero — Cerope AI Fashion Platform">
@@ -20,19 +22,24 @@ export default function Hero() {
 
       <div className="hero-right" aria-hidden="true">
         <div className="hero-card-stack">
-          <div className="hero-card hero-card-accent">
-            <p className="card-label">Body Shape</p>
-            <p className="card-sub">Analyzed</p>
+          <div className="hero-card hero-card-accent overflow-hidden relative border-0">
+            <Image src="/images/fashion/5.webp" alt="Body shape analysis" fill className="object-cover opacity-50" />
+            <div className="absolute inset-0 bg-black/40 z-10" />
+            <div className="relative z-20">
+              <p className="card-label text-white">Body Shape</p>
+              <p className="card-sub text-white/80">Analyzed</p>
+            </div>
           </div>
-          <div className="hero-card hero-card-accent2" />
-          <div className="hero-card hero-card-main">
-            <svg className="fashion-silhouette" viewBox="0 0 140 200" fill="none" aria-hidden="true">
-              <ellipse cx="70" cy="28" rx="20" ry="22" fill="none" stroke="rgba(203,200,255,0.4)" strokeWidth="1" />
-              <path d="M50 50 L30 90 L40 95 L55 75 L55 140 L85 140 L85 75 L100 95 L110 90 L90 50 Z" fill="none" stroke="rgba(152,140,242,0.5)" strokeWidth="1.2" strokeLinejoin="round" />
-              <path d="M55 140 L50 190 L65 190 L70 155 L75 190 L90 190 L85 140 Z" fill="none" stroke="rgba(203,200,255,0.3)" strokeWidth="1" strokeLinejoin="round" />
-            </svg>
-            <p className="card-label" style={{ marginTop: '1rem', fontSize: '.875rem' }}>Cerope AI</p>
-            <p className="card-sub">Style Intelligence</p>
+          <div className="hero-card hero-card-accent2 overflow-hidden relative border-0">
+             <Image src="/images/fashion/6.webp" alt="Style reference" fill className="object-cover opacity-60" />
+          </div>
+          <div className="hero-card hero-card-main overflow-hidden relative border-0">
+            <Image src="/images/fashion/7.webp" alt="Cerope AI Styling" fill className="object-cover opacity-90" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
+            <div className="relative z-20 h-full flex flex-col justify-end pb-4 px-2">
+              <p className="card-label text-white text-sm">Cerope AI</p>
+              <p className="card-sub text-white/80">Style Intelligence</p>
+            </div>
           </div>
         </div>
       </div>

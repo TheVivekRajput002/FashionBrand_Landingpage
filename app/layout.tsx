@@ -5,7 +5,11 @@ export const metadata = {
   description: 'AI-Powered Fashion Platform',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en" data-theme="dark">
       <head>

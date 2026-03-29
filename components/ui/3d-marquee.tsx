@@ -20,18 +20,18 @@ interface ThreeDMarqueeProps {
 }
 
 const defaultImages = [
-  'https://images.unsplash.com/photo-1483985988355-763728e1935b?w=400&q=80',
-  'https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=400&q=80',
-  'https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=400&q=80',
-  'https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=400&q=80',
-  'https://images.unsplash.com/photo-1542204165-65bf26472b9b?w=400&q=80',
-  'https://images.unsplash.com/photo-1502163140606-888448ae8cca?w=400&q=80',
-  'https://images.unsplash.com/photo-1550614000-4b95d4edaeed?w=400&q=80',
-  'https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=400&q=80',
-  'https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=400&q=80',
-  'https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&q=80',
-  'https://images.unsplash.com/photo-1562151048-cdff88ca8e1c?w=400&q=80',
-  'https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=400&q=80',
+  '/images/fashion/1.webp',
+  '/images/fashion/2.webp',
+  '/images/fashion/3.webp',
+  '/images/fashion/4.webp',
+  '/images/fashion/5.webp',
+  '/images/fashion/6.webp',
+  '/images/fashion/7.webp',
+  '/images/fashion/1.webp',
+  '/images/fashion/2.webp',
+  '/images/fashion/3.webp',
+  '/images/fashion/4.webp',
+  '/images/fashion/5.webp',
 ]
 
 const ThreeDMarquee = ({
