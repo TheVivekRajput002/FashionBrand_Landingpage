@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
+import RevealWrapper from './RevealWrapper'
 
 const initialMessages = [
   { role: 'bot', text: "Hi! I'm StyleBot 👋 What are you dressing for today?" },
@@ -49,7 +50,7 @@ export default function StyleBot() {
   return (
     <section className="stylebot-section" id="stylebot" aria-labelledby="stylebot-heading">
       <div className="stylebot-inner">
-        <div className="reveal">
+        <RevealWrapper>
           <p className="section-tag">AI Assistant</p>
           <h2 id="stylebot-heading">
             Confused with<br />What to Buy?<br /><em>Ask StyleBot</em>
@@ -59,9 +60,9 @@ export default function StyleBot() {
             pairings to seasonal transitions to brand comparisons.
           </p>
           <a href="#" className="btn-primary">Chat with StyleBot</a>
-        </div>
+        </RevealWrapper>
 
-        <div className="chat-window reveal" role="log" aria-label="StyleBot conversation preview" aria-live="polite">
+        <RevealWrapper className="chat-window" role="log" aria-label="StyleBot conversation preview" aria-live="polite">
           <div className="chat-header">
             <span className="chat-dot" aria-hidden="true" />
             <span className="chat-title">StyleBot · Online</span>
@@ -95,7 +96,7 @@ export default function StyleBot() {
             />
             <button className="chat-send" onClick={sendMsg} aria-label="Send message">→</button>
           </div>
-        </div>
+        </RevealWrapper>
       </div>
     </section>
   )

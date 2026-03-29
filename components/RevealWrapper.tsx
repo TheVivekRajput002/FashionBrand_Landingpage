@@ -1,7 +1,11 @@
 'use client'
-import { useEffect, useRef, ReactNode, CSSProperties } from 'react'
+import { HTMLAttributes, useEffect, useRef, ReactNode } from 'react'
 
-export default function RevealWrapper({ children, className = '', style }: { children: ReactNode, className?: string, style?: CSSProperties }) {
+interface RevealProps extends HTMLAttributes<HTMLDivElement> {
+  children: ReactNode
+}
+
+export default function RevealWrapper({ children, className = '', ...props }: RevealProps) {
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -23,7 +27,7 @@ export default function RevealWrapper({ children, className = '', style }: { chi
   }, [])
 
   return (
-    <div ref={ref} className={`reveal ${className}`} style={style}>
+    <div ref={ref} className={`reveal ${className}`} {...props}>
       {children}
     </div>
   )

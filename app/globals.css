@@ -24,6 +24,10 @@
   --text-xs: 0.75rem; --text-sm: 0.875rem; --text-base: 1rem; --text-lg: 1.125rem;
 }
 [data-theme="light"] {
+  --violet: #5B52D4;
+  --cyan: #0284C7;
+  --lavender: #4338CA;
+  --plum: #7E22CE;
   --dark: #F5F3FF; --dark2: #EDE9FE; --dark3: #DDD6FE; --dark4: #C4B5FD;
   --text-primary: #0D0B1A; --text-secondary: #4C1D95; --text-muted: #5B21B6;
   --border-subtle: rgba(76,29,149,0.08); --border-default: rgba(76,29,149,0.14);

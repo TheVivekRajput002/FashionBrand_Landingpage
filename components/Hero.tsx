@@ -23,7 +23,7 @@ export default function Hero() {
       <div className="hero-right" aria-hidden="true">
         <div className="hero-card-stack">
           <div className="hero-card hero-card-accent overflow-hidden relative border-0">
-            <Image src="/images/fashion/5.webp" alt="Body shape analysis" fill className="object-cover opacity-50" />
+            <Image src="/images/fashion/5.webp" alt="Body shape analysis" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-50" />
             <div className="absolute inset-0 bg-black/40 z-10" />
             <div className="relative z-20">
               <p className="card-label text-white">Body Shape</p>
@@ -31,10 +31,10 @@ export default function Hero() {
             </div>
           </div>
           <div className="hero-card hero-card-accent2 overflow-hidden relative border-0">
-             <Image src="/images/fashion/6.webp" alt="Style reference" fill className="object-cover opacity-60" />
+             <Image src="/images/fashion/6.webp" alt="Style reference" fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover opacity-60" />
           </div>
           <div className="hero-card hero-card-main overflow-hidden relative border-0">
-            <Image src="/images/fashion/7.webp" alt="Cerope AI Styling" fill className="object-cover opacity-90" />
+            <Image src="/images/fashion/7.webp" alt="Cerope AI Styling" fill sizes="(max-width: 768px) 100vw, 33vw" priority className="object-cover opacity-90" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent z-10" />
             <div className="relative z-20 h-full flex flex-col justify-end pb-4 px-2">
               <p className="card-label text-white text-sm">Cerope AI</p>

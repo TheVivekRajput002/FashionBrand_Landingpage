@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Image from "next/image";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -198,10 +199,12 @@ export default function VerticalTabs() {
                   className="absolute inset-0 w-full h-full cursor-pointer"
                   onClick={handleNext}
                 >
-                  <img
+                  <Image
                     src={SERVICES[activeIndex].image}
                     alt={SERVICES[activeIndex].title}
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 60vw"
+                    className="object-cover transition-transform duration-700 hover:scale-105"
                   />
 
                   <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-60" />
