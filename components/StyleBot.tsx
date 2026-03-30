@@ -66,7 +66,6 @@ export default function StyleBot() {
     <section className="stylebot-section" id="stylebot" aria-labelledby="stylebot-heading">
       <div className="stylebot-inner">
         <RevealWrapper>
-          <p className="section-tag">AI Assistant</p>
           <h2 id="stylebot-heading">
             What to Wear?<br /><em>Ask StyleBot</em>
           </h2>

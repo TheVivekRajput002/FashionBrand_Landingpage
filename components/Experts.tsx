@@ -5,7 +5,6 @@ export default function Experts() {
   return (
     <section className="experts-section" id="experts" aria-labelledby="experts-heading" style={{ overflow: 'hidden' }}>
       <RevealWrapper>
-        <p className="section-tag center">Human + AI</p>
         <h2 id="experts-heading" style={{ textAlign: 'center', margin: '.5rem auto 1rem' }}>
           Meet Our <em>Style Experts</em>
         </h2>

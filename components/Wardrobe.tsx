@@ -8,7 +8,6 @@ export default function Wardrobe() {
         {/* Text Column */}
         <div className="wardrobe-text">
           <RevealWrapper>
-            <p className="section-tag">Virtual Wardrobe</p>
             <h2 id="wardrobe-heading">
               Your Personal<br />
               <em>3D Wardrobe</em>

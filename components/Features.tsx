@@ -13,7 +13,6 @@ export default function Features() {
   return (
     <section className="section" id="features" aria-labelledby="feat-heading">
       <RevealWrapper>
-        <p className="section-tag">What Cerope Does</p>
         <h2 id="feat-heading">
           Fashion Intelligence,<br /><em>Reimagined</em>
         </h2>

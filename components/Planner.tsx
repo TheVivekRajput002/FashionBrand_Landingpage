@@ -40,7 +40,6 @@ export default function Planner() {
     <section className="planner-section" id="planner" aria-labelledby="planner-heading">
       <div className="planner-inner">
         <RevealWrapper>
-          <p className="section-tag">Outfit Planner</p>
           <h2 id="planner-heading">
             Plan Your Outfits,<br /><em>No Last-Min Panics</em>
           </h2>

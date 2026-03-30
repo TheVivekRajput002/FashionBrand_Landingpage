@@ -98,9 +98,6 @@ export default function VerticalTabs() {
             <h2 className="tracking-tighter text-balance text-3xl font-medium md:text-4xl lg:text-5xl text-foreground">
               Connect with<br /><em>Fashion Experts</em>
             </h2>
-            <span className="text-[10px] font-medium text-muted-foreground uppercase tracking-[0.3em] block ml-0.5 mt-2">
-              (NETWORK)
-            </span>
           </div>
 
           <div className="flex flex-col space-y-0">

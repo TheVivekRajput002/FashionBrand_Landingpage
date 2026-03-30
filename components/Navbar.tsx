@@ -91,24 +91,14 @@ export default function Navbar() {
             {/* MAIN NAV */}
             <nav className={`main-nav ${scrolled ? 'scrolled' : ''}`} role="navigation" aria-label="Main navigation">
                 <a href="#" className="nav-logo">
-                    <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cerope logo" width="32" height="32" className="nav-logo-svg">
-                        <title>Cerope</title>
-                        <defs>
-                            <filter id="logoGlow" x="-50%" y="-50%" width="200%" height="200%">
-                                <feGaussianBlur stdDeviation="1.5" result="blur" />
-                                <feMerge>
-                                    <feMergeNode in="blur" />
-                                    <feMergeNode in="SourceGraphic" />
-                                </feMerge>
-                            </filter>
-                        </defs>
-                        <path
-                            d="M4 16C4 14 8 8 14 9.5C18 10.5 18 10.5 22 9.5C28 8 28 16 22 18.5C18 20 14 19 12 21C10 23 9 25 8 24C6 22 4 20 4 16Z"
-                            stroke="#CBC8FF"
-                            strokeWidth="1.6"
-                            fill="none"
-                        />
-                    </svg>
+                    <img 
+                        src="/logo-black.svg" 
+                        alt="Cerope logo" 
+                        width="32" 
+                        height="32" 
+                        className="nav-logo-svg" 
+                        style={{ filter: isDark ? 'invert(1)' : 'none', objectFit: 'contain' }} 
+                    />
                     Cerope
                 </a>
                 <ul className="nav-links">

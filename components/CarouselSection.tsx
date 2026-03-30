@@ -6,7 +6,6 @@ export default function CarouselSection() {
     <section className="carousel-section" aria-labelledby="carousel-heading">
       <RevealWrapper className="carousel-header">
         <div>
-          <p className="section-tag">Collections</p>
           <h2 id="carousel-heading">
             Choose What Suits You<br /><em>For Every Occasion</em>
           </h2>

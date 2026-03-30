@@ -4,7 +4,6 @@ export default function Hero() {
   return (
     <section className="hero" aria-label="Hero — Cerope AI Fashion Platform">
       <div className="hero-left">
-        <span className="hero-tag">AI-Powered Fashion</span>
         <h1>
           Elevate Your<br />
           <em>Wardrobe,</em><br />

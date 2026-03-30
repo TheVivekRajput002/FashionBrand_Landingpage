@@ -3,10 +3,14 @@ import { useState } from 'react'
 
 const CeropeLogo = () => (
   <a href="#" className="nav-logo">
-    <svg viewBox="0 0 32 32" fill="none" role="img" aria-label="Cerope" width="32" height="32">
-      <title>Cerope</title>
-      <path d="M4 16C4 14 8 8 14 9.5C18 10.5 18 10.5 22 9.5C28 8 28 16 22 18.5C18 20 14 19 12 21C10 23 9 25 8 24C6 22 4 20 4 16Z" stroke="#CBC8FF" strokeWidth="1.6" fill="none" />
-    </svg>
+    <img 
+      src="/logo-black.svg" 
+      alt="Cerope logo" 
+      width="32" 
+      height="32" 
+      className="nav-logo-svg footer-logo" 
+      style={{ filter: 'var(--logo-filter, invert(1))', objectFit: 'contain' }} 
+    />
     Cerope
   </a>
 )

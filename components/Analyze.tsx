@@ -6,7 +6,6 @@ export default function Analyze() {
       <div className="analyze-grid">
         {/* Left: Header + CTA */}
         <RevealWrapper>
-          <p className="section-tag">AI Analysis</p>
           <h2 id="analyze-heading">
             Style Starts with<br /><em>Knowing Yourself</em>
           </h2>
