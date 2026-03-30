@@ -1,5 +1,4 @@
 import Navbar from '@/components/Navbar'
-import BottomNav from '@/components/BottomNav'
 import Hero from '@/components/Hero'
 import MarqueeSection from '@/components/MarqueeSection'
 import Features from '@/components/Features'
@@ -16,7 +15,6 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <BottomNav />
       <main>
         <Hero />
         <MarqueeSection />

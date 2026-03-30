@@ -94,7 +94,7 @@ export default function VerticalTabs() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
         {/* Left Column: Content */}
         <div className="lg:col-span-5 flex flex-col justify-center order-2 lg:order-1 pt-4">
-          <div className="space-y-1 mb-12">
+          <div className="space-y-1 mb-14">
             <h2 className="tracking-tighter text-balance text-3xl font-medium md:text-4xl lg:text-5xl text-foreground">
               Connect with<br /><em>Fashion Experts</em>
             </h2>
@@ -118,7 +118,7 @@ export default function VerticalTabs() {
                     {isActive && (
                       <motion.div
                         key={`progress-${index}-${isPaused}`}
-                        className="absolute top-0 left-0 w-full bg-foreground origin-top"
+                        className="absolute top-2 left-0 w-full bg-foreground origin-top"
                         initial={{ height: "0%" }}
                         animate={
                           isPaused ? { height: "0%" } : { height: "100%" }

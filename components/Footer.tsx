@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { Camera, Music2, Pin } from 'lucide-react'
 
 const CeropeLogo = () => (
   <a href="#" className="nav-logo">
@@ -88,12 +89,12 @@ export default function Footer() {
         <span className="footer-copy">© 2026 Cerope. All rights reserved.</span>
         <div className="footer-social" aria-label="Social media links">
           {[
-            { label: 'Instagram', icon: '📸', href: '#' },
-            { label: 'TikTok',    icon: '🎵', href: '#' },
-            { label: 'Pinterest', icon: '📌', href: '#' },
-          ].map(({ label, icon, href }) => (
-            <a key={label} href={href} className="footer-social-link" aria-label={label} title={label}>
-              {icon}
+            { label: '/icons/Instagram.png',  href: '#' },
+            { label: '/icons/Facebook.png',     href: '#' },
+            { label: '/icons/Pinterest.png',  href: '#' },
+          ].map(({ label, href }) => (
+            <a key={label} href={href} className="" aria-label={label} title={label}>
+              <img src={label} alt="" className='h-6'/>
             </a>
           ))}
         </div>

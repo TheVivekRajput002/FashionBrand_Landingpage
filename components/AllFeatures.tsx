@@ -1,18 +1,18 @@
 import RevealWrapper from './RevealWrapper'
+import { Brain, Calendar, Shirt, MessageSquare, Star } from 'lucide-react'
 
 const icons = [
-  { icon: '🧠', label: 'AI Styling' },
-  { icon: '📅', label: 'Planner' },
-  { icon: '🪞', label: 'Wardrobe' },
-  { icon: '💬', label: 'StyleBot' },
-  { icon: '🌟', label: 'Experts' },
+  { icon: <Brain size={32} strokeWidth={1.5} />, label: 'AI Styling' },
+  { icon: <Calendar size={32} strokeWidth={1.5} />, label: 'Planner' },
+  { icon: <Shirt size={32} strokeWidth={1.5} />, label: 'Wardrobe' },
+  { icon: <MessageSquare size={32} strokeWidth={1.5} />, label: 'StyleBot' },
+  { icon: <Star size={32} strokeWidth={1.5} />, label: 'Experts' },
 ]
 
 export default function AllFeatures() {
   return (
     <section className="all-section" aria-labelledby="all-heading">
       <RevealWrapper className="all-section-header">
-        <p className="all-section-tag">Everything in One Place</p>
         <h2 id="all-heading" className="all-section-title">
           Cerope Does All This<br />
           <em>&amp; More</em>

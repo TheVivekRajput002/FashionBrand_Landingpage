@@ -1,5 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from 'react'
+import { Sun, Moon } from 'lucide-react'
 
 const NAV_SECTIONS = ['features', 'analyze', 'wardrobe', 'stylebot', 'experts']
 
@@ -119,8 +120,18 @@ export default function Navbar() {
                         onClick={toggleTheme}
                         aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
                         title="Toggle theme"
+                        style={{ position: 'relative' }}
                     >
-                        {isDark ? '☀️' : '🌙'}
+                        <Sun 
+                            className={`absolute transition-all duration-500 ${isDark ? 'opacity-0 rotate-90 scale-50' : 'opacity-100 rotate-0 scale-100'}`} 
+                            size={20} 
+                            strokeWidth={1.5}
+                        />
+                        <Moon 
+                            className={`absolute transition-all duration-500 ${isDark ? 'opacity-100 rotate-0 scale-100' : 'opacity-0 -rotate-90 scale-50'}`} 
+                            size={20} 
+                            strokeWidth={1.5}
+                        />
                     </button>
                     <a href="#analyze" className="nav-cta">Get Started</a>
                     <button
